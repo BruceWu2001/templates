@@ -13,6 +13,7 @@ to start client
 npm run dev
 
 slowness is due to persisting of data by redux persist
+
     - solution 1. set timeout in persistConfig
         * risk - ui may load before store rehydrate *
 
