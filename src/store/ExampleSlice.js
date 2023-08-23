@@ -39,7 +39,7 @@ export const {
 const persistConfig = {
     key: 'example',
     storage,
-    timeout : 1500,
+    timeout : 1000,
 };
 
 export const exampleReducer = persistReducer(persistConfig, exampleSlice.reducer);

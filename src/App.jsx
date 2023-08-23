@@ -36,7 +36,7 @@ const App = () => {
                 </div>
 
                 {/* contents*/}
-                <div className="p-5">
+                <div className="w-full h-full p-5">
                     <Routes>
                         <Route path="/" element={<Home/>}></Route>
                         <Route path="/example" element={<Example/>}></Route>                    

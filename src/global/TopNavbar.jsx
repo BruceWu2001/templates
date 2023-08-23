@@ -6,9 +6,10 @@ import {
     Toolbar, Typography, Button,
     Divider, Drawer, IconButton} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 import { generateColors } from '../initialSettings';
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = [{name : 'Home', link : "/"}, {name : 'About', link : "/about"},{name : 'Contact', link : "/contact"}];
 
 function TopNavBar(props) {
   const { window } = props;
@@ -25,10 +26,10 @@ function TopNavBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+        {navItems.map(({name, link}) => (
+          <ListItem key={name} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }} component={Link} to={link}>
+              <ListItemText primary={name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -59,9 +60,9 @@ function TopNavBar(props) {
             MUI
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: colors.text }}>
-                {item}
+            {navItems.map(({name, link}) => (
+              <Button key={name} sx={{ color: colors.text }} href={link}>
+                {name}
               </Button>
             ))}
           </Box>

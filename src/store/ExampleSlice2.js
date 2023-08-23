@@ -35,7 +35,7 @@ export const {
 const persistConfig = {
     key: 'example2',
     storage,
-    timeout : 1500,
+    timeout : 1000,
     blacklist : ["delta", "epsilon"]
 };
 
