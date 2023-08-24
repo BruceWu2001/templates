@@ -4,7 +4,6 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import TopNavBar from './global/TopNavbar';
-import Navbar from "./global/Navbar"
 import Home from './scenes/Home';
 import Example from './scenes/Example';
 import { theme } from './theme';
@@ -32,7 +31,6 @@ const App = () => {
                 {/* global components */}
                 <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
                     <TopNavBar/>
-                    {/* <Navbar/> */}
                 </div>
 
                 {/* contents*/}

@@ -1,6 +1,6 @@
 import { Box, Typography,Button } from "@mui/material"
 import { generateColors } from "../initialSettings"
-
+import CreateCanvas from "../components/canvas/CreateCanvas"
 
 const Home = () => {
     const colors = generateColors()
@@ -11,6 +11,9 @@ const Home = () => {
             <Typography>home</Typography>
 
             <Button href="/example" variant="contained" className="bg-tertiary">Example</Button>
+            <div className="w-[400px] h-[400px]">
+                <CreateCanvas  urlToGLTF={"./kidney_cross-section/scene.gltf"}/>
+            </div>
         </Box>
     </section>
     )

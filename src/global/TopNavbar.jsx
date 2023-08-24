@@ -41,7 +41,7 @@ function TopNavBar(props) {
   const colors = generateColors()
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav" position='sticky' style={{ background: colors.secondary }}>
+      <AppBar component="nav" position='sticky' style={{ background: colors.primary }}>
         <Toolbar>
           <IconButton
             color="inherit"

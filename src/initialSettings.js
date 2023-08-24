@@ -8,12 +8,23 @@
 //     })
 // }
 
+// export const generateColors = () => {
+//     return ({
+//         primary : "#BBBDF6",
+//         secondary : "#9893DA",
+//         tertiary : "#797A9E",
+//         bg : "#72727E",
+//         text : "#efefef",
+//         // text2 : "#212427",
+//     })
+// }
+
 export const generateColors = () => {
     return ({
-        primary : "#BBBDF6",
-        secondary : "#9893DA",
-        tertiary : "#797A9E",
-        bg : "#72727E",
-        text : "#efefef",
+        primary : "#D2EDAF",
+        secondary : "#ADF7B6",
+        tertiary : "#F7E1D7",
+        bg : "#B0C4B1",
+        text : "#212427",
     })
 }
