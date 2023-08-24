@@ -6,11 +6,10 @@ const Home = () => {
     const colors = generateColors()
     return (
     <section className="relative w-full h-full flex flex-col" >
-        <Typography>hello</Typography>
         <Box className="bg-primary w-full h-1/2 flex flex-col justify-center items-center">
             <Typography>home</Typography>
 
-            <Button href="/example" variant="contained" className="bg-tertiary">Example</Button>
+            <Button href="/example" variant="contained" className="bg-secondary">Example</Button>
             <div className="w-[400px] h-[400px]">
                 <CreateCanvas  urlToGLTF={"./kidney_cross-section/scene.gltf"}/>
             </div>

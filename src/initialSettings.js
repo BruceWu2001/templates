@@ -21,10 +21,10 @@
 
 export const generateColors = () => {
     return ({
-        primary : "#D2EDAF",
-        secondary : "#ADF7B6",
-        tertiary : "#F7E1D7",
-        bg : "#B0C4B1",
+        primary : "#CEB1BE",
+        secondary : "#C89294",
+        tertiary : "#E2DCDE",
+        bg : "#F1E4E8",
         text : "#212427",
     })
 }
