@@ -1,7 +1,7 @@
 this template combines both mui and tailwindcss
 
 to start set colors in initialSettings
-for fonts must change both theme.js and tailwind.config
+for fonts must change theme.js
 
 by right mui will be the baseline and tailwind will override any conflicting styles
 
